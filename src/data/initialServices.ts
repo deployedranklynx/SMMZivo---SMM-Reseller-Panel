@@ -1,0 +1,430 @@
+import { SMMService } from '../types';
+
+export const INITIAL_SERVICES: SMMService[] = [
+  // --- Featured Services (as seen in SMM ZIVO catalog) ---
+  {
+    id: 7974,
+    name: "YouTube Monetized Channel 🌟 | Real Organic 1000+ Subscribers & 4000 Hours Watch Time ⏱️ | Lifetime Stability ✅ | Best Service 🌐 | Cheapest In Market 💰 | Fast Delivery (0-24 Hrs) 🚀",
+    category: "YouTube › Full Monetized Channel",
+    rate: 96.0727,
+    min: 1,
+    max: 1,
+    description: "Start Time: 0-1 Hours. Speed: 24 Hours. Channel is fully approved with YouTube Partner Program (YPP). Active monetization enabled, organic watch time and subscribers, zero strikes, clean copyright standing. Lifetime warranty & replacement guarantee.",
+    avgTime: "12 hours",
+    refill: true,
+    cancel: false,
+    type: "Package"
+  },
+  {
+    id: 7975,
+    name: "Whatsapp Poll Votes [ A ] [ Max 20K ] | HQ Profiles | Day 20K",
+    category: "WhatsApp Poll Votes [ Provider ] NEW",
+    rate: 1.2008,
+    min: 10,
+    max: 20000,
+    description: "Start Time: 0-30 Min. High-quality unique Pakistani, Indian & Worldwide active WhatsApp profiles. Provide channel/group link along with vote option number (e.g. Option 1 or Option 2).",
+    avgTime: "25 minutes",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+  // --- Instagram Followers ---
+  {
+    id: 101,
+    name: "Instagram Followers [High Quality - Non Drop] ⚡ Fast Speed - 30D Refill",
+    category: "Instagram Followers",
+    rate: 0.85,
+    min: 50,
+    max: 100000,
+    description: "Start: 0-10 Min. Speed: 20k-50k/day. Guaranteed non-drop followers with profile pictures and bio. 30 Days auto-refill button enabled.",
+    avgTime: "15 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "1421"
+  },
+  {
+    id: 102,
+    name: "Instagram Followers [Real Active Looking] ⭐ 365 Days Refill - Lifetime Guarantee",
+    category: "Instagram Followers",
+    rate: 1.45,
+    min: 100,
+    max: 500000,
+    description: "High retention real-looking profiles. Zero drop rate observed. 365 days free refill button. Perfect for brands, models, and influencers.",
+    avgTime: "45 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "1428"
+  },
+  {
+    id: 103,
+    name: "Instagram Followers [Cheapest in Market] 🚀 Instant Start - No Refill",
+    category: "Instagram Followers",
+    rate: 0.38,
+    min: 100,
+    max: 50000,
+    description: "Cheapest pricing for bulk accounts and testing. Starts instantly within seconds.",
+    avgTime: "5 minutes",
+    refill: false,
+    cancel: true,
+    type: "Default"
+  },
+  {
+    id: 104,
+    name: "Instagram Targeted Followers [USA / UK / Europe] 🌍 High Quality",
+    category: "Instagram Followers",
+    rate: 3.20,
+    min: 50,
+    max: 25000,
+    description: "Targeted accounts from North America and Europe regions. High engagement probability.",
+    avgTime: "2 hours",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Instagram Likes ---
+  {
+    id: 201,
+    name: "Instagram Likes [Super Instant] ⚡ 50K/Day - High Quality HQ",
+    category: "Instagram Likes",
+    rate: 0.12,
+    min: 50,
+    max: 100000,
+    description: "Start: 0-1 minute. Natural delivery speed, high quality profiles with stories and posts.",
+    avgTime: "2 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "892"
+  },
+  {
+    id: 202,
+    name: "Instagram Likes [Real Impression + Reach Boost] 📈 Explore Ranking",
+    category: "Instagram Likes",
+    rate: 0.28,
+    min: 100,
+    max: 50000,
+    description: "Includes explore page impressions, profile visits, and saves to boost Instagram algorithm ranking.",
+    avgTime: "10 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 203,
+    name: "Instagram Likes [Worldwide Organic Speed] 💎 Lifetime Non-Drop",
+    category: "Instagram Likes",
+    rate: 0.19,
+    min: 50,
+    max: 200000,
+    description: "Stable non-drop likes from active worldwide profiles. Best for consistent daily posts.",
+    avgTime: "5 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Instagram Reels & Video Views ---
+  {
+    id: 301,
+    name: "Instagram Reels Views [Instant Start] 🚀 1 Million/Day Speed",
+    category: "Instagram Views & Reels",
+    rate: 0.02,
+    min: 100,
+    max: 10000000,
+    description: "Super cheap! $0.02 per 1,000 views. Incredible speed up to 1M/day. Works for Reels, IGTV, and normal video posts.",
+    avgTime: "1 minute",
+    refill: false,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "305"
+  },
+  {
+    id: 302,
+    name: "Instagram Story Views + Poll Vote + Swipe-up 📱 Instant",
+    category: "Instagram Views & Reels",
+    rate: 0.15,
+    min: 100,
+    max: 100000,
+    description: "Watches all active stories on the profile. Boosts story ranking in follower feeds.",
+    avgTime: "5 minutes",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- YouTube Views & Watch Time ---
+  {
+    id: 401,
+    name: "YouTube Views [High Retention 3-5 Mins] 🎥 Monetizable - Non Drop",
+    category: "YouTube Services",
+    rate: 1.65,
+    min: 500,
+    max: 1000000,
+    description: "Safe for Adsense monetization. 3 to 5 minutes average watch duration. Real YouTube Suggested and External traffic sources.",
+    avgTime: "1 hour",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-2",
+    providerServiceId: "9002"
+  },
+  {
+    id: 402,
+    name: "YouTube Watch Time [4000 Hours Monetization Package] ⏱️ 60 Min+ Video",
+    category: "YouTube Services",
+    rate: 18.50,
+    min: 100,
+    max: 4000,
+    description: "Guaranteed to count toward YouTube Partner Program (YPP) requirements. Must provide a video link of 60+ minutes duration.",
+    avgTime: "24 hours",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 403,
+    name: "YouTube Subscribers [Non Drop - 100% Real] 🛡️ 30 Days Refill Guarantee",
+    category: "YouTube Services",
+    rate: 9.80,
+    min: 50,
+    max: 10000,
+    description: "High quality subscriber profiles with custom avatars and channels. Slow steady drip-feed delivery to avoid YouTube purge.",
+    avgTime: "6 hours",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-2",
+    providerServiceId: "9050"
+  },
+  {
+    id: 404,
+    name: "YouTube Shorts Views [Viral Algorithm Boost] ⚡ Instant Start",
+    category: "YouTube Services",
+    rate: 0.45,
+    min: 500,
+    max: 5000000,
+    description: "High-speed Shorts views directly from YouTube Shorts feed. Helps trigger YouTube recommendation algorithm.",
+    avgTime: "15 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- TikTok Services ---
+  {
+    id: 501,
+    name: "TikTok Followers [HQ Profiles with Videos] 🎵 30 Days Auto-Refill",
+    category: "TikTok Services",
+    rate: 1.95,
+    min: 100,
+    max: 50000,
+    description: "High quality TikTok followers with realistic bios, profile pictures, and uploaded clips. Unlocks TikTok Live capability once reaching 1,000.",
+    avgTime: "30 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "2104"
+  },
+  {
+    id: 502,
+    name: "TikTok Likes [Instant Start - High Speed] ❤️ 100K/Day Capacity",
+    category: "TikTok Services",
+    rate: 0.40,
+    min: 50,
+    max: 200000,
+    description: "Starts in 0-5 minutes. Great for ranking on For You Page (FYP). Fast and stable.",
+    avgTime: "5 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 503,
+    name: "TikTok Views [Ultra Fast & Cheapest] 🔥 10M/Day Speed",
+    category: "TikTok Services",
+    rate: 0.015,
+    min: 100,
+    max: 10000000,
+    description: "Only $0.015 per 1,000 views! Lightning fast delivery. Push your TikTok videos to FYP trending.",
+    avgTime: "1 minute",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 504,
+    name: "TikTok Shares + Saves + Reposts [Full Engagement Pack] 🚀",
+    category: "TikTok Services",
+    rate: 0.25,
+    min: 100,
+    max: 50000,
+    description: "Boosts all key algorithmic signals: video shares, bookmark saves, and community reposts.",
+    avgTime: "10 minutes",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Telegram Services ---
+  {
+    id: 601,
+    name: "Telegram Channel / Group Members [0% Drop Rate] 🛡️ 30 Days Refill",
+    category: "Telegram Services",
+    rate: 0.90,
+    min: 100,
+    max: 100000,
+    description: "Top tier Telegram members. Real names and profile avatars. Zero drop observed over long periods.",
+    avgTime: "20 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default",
+    providerId: "prov-1",
+    providerServiceId: "771"
+  },
+  {
+    id: 602,
+    name: "Telegram Post Views [Last 10 Posts Auto-Split] 👁️ Instant Delivery",
+    category: "Telegram Services",
+    rate: 0.08,
+    min: 100,
+    max: 50000,
+    description: "Distributes views evenly across the last 10 posts on your public channel. Makes the channel look very active.",
+    avgTime: "2 minutes",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 603,
+    name: "Telegram Reactions [Positive Mixed Emoji 👍❤️🔥] 🌟 High Quality",
+    category: "Telegram Services",
+    rate: 0.18,
+    min: 50,
+    max: 20000,
+    description: "Adds thumbs up, fire, heart, and party emojis to your selected Telegram message link.",
+    avgTime: "5 minutes",
+    refill: false,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Twitter / X Services ---
+  {
+    id: 701,
+    name: "Twitter (X) Followers [Real Looking] 🐦 30 Days Refill - Non Drop",
+    category: "Twitter (X) Services",
+    rate: 2.80,
+    min: 50,
+    max: 50000,
+    description: "Real looking accounts with tweets and headers. Stable against Twitter suspensions. 30 days guarantee.",
+    avgTime: "45 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 702,
+    name: "Twitter (X) Likes & Retweets Combo [Instant] 🚀 Boost Impression",
+    category: "Twitter (X) Services",
+    rate: 1.10,
+    min: 50,
+    max: 25000,
+    description: "Instant delivery. Adds both favorites and retweets to increase post visibility in 'For You' feed.",
+    avgTime: "10 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Facebook Services ---
+  {
+    id: 801,
+    name: "Facebook Page Likes + Followers [Worldwide HQ] 👍 30D Refill",
+    category: "Facebook Services",
+    rate: 1.75,
+    min: 100,
+    max: 100000,
+    description: "Delivers both page likes and page followers simultaneously. Perfect for business pages and public figures.",
+    avgTime: "1 hour",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 802,
+    name: "Facebook Post Video Views [Monetization Safe] 📹 100K/Day",
+    category: "Facebook Services",
+    rate: 0.35,
+    min: 500,
+    max: 500000,
+    description: "Safe for ad break monetization requirements. 1-minute to 3-minute video view options.",
+    avgTime: "30 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Spotify & Music Services ---
+  {
+    id: 901,
+    name: "Spotify Track Plays [Premium USA / Tier 1 Streams] 🎵 Royalties Eligible",
+    category: "Spotify Services",
+    rate: 1.20,
+    min: 1000,
+    max: 1000000,
+    description: "Safe streams from premium accounts. Eligible for streaming royalties and algorithmic algorithmic radio triggers.",
+    avgTime: "2 hours",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 902,
+    name: "Spotify Artist Monthly Listeners [30 Days Active] 🎧 Real Drip Feed",
+    category: "Spotify Services",
+    rate: 2.10,
+    min: 500,
+    max: 100000,
+    description: "Increases your Spotify Artist profile's 'Monthly Listeners' metric. Updated daily on Spotify canvas.",
+    avgTime: "12 hours",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+
+  // --- Discord & Threads ---
+  {
+    id: 1001,
+    name: "Discord Server Members [Online + Offline Realistic Ratio] 🎮 Non-Drop",
+    category: "Discord Services",
+    rate: 3.50,
+    min: 100,
+    max: 10000,
+    description: "Mixed online and offline members with custom avatars and nicknames. Safe for public and private servers.",
+    avgTime: "2 hours",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  },
+  {
+    id: 1101,
+    name: "Threads Followers [By Instagram HQ] 🧵 Fast Delivery - 30D Refill",
+    category: "Threads Services",
+    rate: 1.30,
+    min: 50,
+    max: 50000,
+    description: "Connected Instagram accounts with active Threads profiles. Great for new account establishment.",
+    avgTime: "30 minutes",
+    refill: true,
+    cancel: false,
+    type: "Default"
+  }
+];

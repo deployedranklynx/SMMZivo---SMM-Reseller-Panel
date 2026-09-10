@@ -1,0 +1,6 @@
+{
+  "name": "SMMZivo - SMM Reseller Panel",
+  "description": "Comprehensive SMM Reseller Panel clone of smmzivo.com with real order processing backend, external SMM API automation, v2 API, and dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
